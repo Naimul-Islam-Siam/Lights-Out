@@ -1,28 +1,12 @@
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
 .Board {
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-}
-
-table tr:first-child td:first-child {
-  border-radius: 10px 0 0 0 !important;
-}
-
-table tr:first-child td:last-child {
-  border-radius: 0 10px 0 0 !important;
-}
-
-table tr:last-child td:first-child {
-  border-radius: 0 0 0 10px !important;
-}
-
-table tr:last-child td:last-child {
-  border-radius: 0 0 10px 0 !important;
-}
-
-@font-face {
-  font-family: neon;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
 .Board-title {
@@ -84,4 +68,20 @@ table tr:last-child td:last-child {
     text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
     color: #146C80;
   }
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
 }
