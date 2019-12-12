@@ -1,5 +1,23 @@
 .Board {
   margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
 }
 
 @font-face {
@@ -7,21 +25,20 @@
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
-.container {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+.Board-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .neon-orange {
   font-family: neon;
   color: #FB4264;
-  font-size: 9vw;
-  line-height: 9vw;
+  font-size: 80px;
   text-shadow: 0 0 3vw #F40A35;
-  animation: neon 1s ease infinite;
-  -moz-animation: neon 1s ease infinite;
-  -webkit-animation: neon 1s ease infinite;
+  animation: neon-orange 1s ease infinite;
+  -moz-animation: neon-orange 1s ease infinite;
+  -webkit-animation: neon-orange 1s ease infinite;
 }
 
 .neon-blue {
@@ -30,10 +47,15 @@
   font-size: 9vw;
   line-height: 9vw;
   text-shadow: 0 0 3vw #2356FF;
-  animation: flux 2s linear infinite;
-  -moz-animation: flux 2s linear infinite;
-  -webkit-animation: flux 2s linear infinite;
-  -o-animation: flux 2s linear infinite;
+  animation: neon-blue 2s linear infinite;
+  -moz-animation: neon-blue 2s linear infinite;
+  -webkit-animation: neon-blue 2s linear infinite;
+  -o-animation: neon-blue 2s linear infinite;
+}
+
+.winner .neon-blue,
+.winner .neon-orange {
+  font-size: 110px;
 }
 
 @keyframes neon-orange {
